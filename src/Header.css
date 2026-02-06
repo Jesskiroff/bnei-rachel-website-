@@ -1,0 +1,12 @@
+header {
+    color:black;
+    display: flex;
+    flex-direction:  column;
+    justify-content: flex-start;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+}
