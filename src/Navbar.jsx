@@ -22,7 +22,7 @@ function Navbar() {
       <ul className="nav-links">
 
         <li onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
-          <Link to="/about">About</Link>
+          <Link to="/about">ABOUT</Link>
           {openDropdown === "about" && (
             <ul className="dropdown">
               <li><Link to="/about/mission">Mission Statement</Link></li>
@@ -33,7 +33,7 @@ function Navbar() {
         </li>
 
         <li onMouseEnter={() => handleMouseEnter("program")} onMouseLeave={handleMouseLeave}>
-          <Link to="/program">Program</Link>
+          <Link to="/program">PROGRAM</Link>
           {openDropdown === "program" && (
             <ul className="dropdown">
               <li><Link to="/program/schedule">Weekly Schedule</Link></li>
@@ -44,7 +44,7 @@ function Navbar() {
         </li>
 
         <li onMouseEnter={() => handleMouseEnter("faculty")} onMouseLeave={handleMouseLeave}>
-          <Link to="/faculty">Faculty</Link>
+          <Link to="/faculty">FACULTY</Link>
           {openDropdown === "faculty" && (
             <ul className="dropdown">
               <li><Link to="/faculty/administration">Administration</Link></li>
@@ -54,8 +54,8 @@ function Navbar() {
           )}
         </li>
 
-        <li><Link to="/shiurs">Shiurs</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/shiurs">SHUIRS</Link></li>
+        <li><Link to="/contact">CONTACT US</Link></li>
         <li><Link to="/donate" className="donate-btn">Donate</Link></li>
 
       </ul>
