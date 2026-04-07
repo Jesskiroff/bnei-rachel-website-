@@ -54,7 +54,16 @@ function Navbar() {
           )}
         </li>
 
-        <li><Link to="/shiurs">SHUIRS</Link></li>
+
+        <li onMouseEnter={() => handleMouseEnter("shiurs")} onMouseLeave={handleMouseLeave} >
+            <Link to="/shiurs">SHIURS</Link>
+            {openDropdown === "shiurs" && (
+                <ul className="dropdown">
+                <li><Link to="/shiurs/live-classes">Live Classes</Link></li>
+                <li><Link to="/shiurs/recorded-classes">Recorded Classes</Link></li>
+              </ul>
+            )}
+        </li>
         <li><Link to="/contact">CONTACT US</Link></li>
         <li><Link to="/donate" className="donate-btn">Donate</Link></li>
 
