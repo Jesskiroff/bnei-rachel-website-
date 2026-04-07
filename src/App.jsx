@@ -26,8 +26,19 @@ function App() {
    <div>
     <Header />
     <Image/>
-    <h1 className ="heading">My Contacts</h1>
-      {contacts.map(createCard)}
+    <h1 className ="heading">Contact us</h1>
+      <dl className='contact-list'>
+        {contacts.map(contact => (
+        <Card key={contact.id}
+          name={contact.name}
+          img={contact.imgURL}
+          tel={contact.phone}
+          email={contact.email}
+          className="card"  
+        />
+          
+        ))}
+      </dl>
    </div>
   )
 }
