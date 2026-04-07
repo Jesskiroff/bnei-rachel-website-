@@ -17,8 +17,10 @@
   }
   
   .navbar-logo img {
-    height: 70px;
-    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .navbar h1 {

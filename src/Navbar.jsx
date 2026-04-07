@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
+import logo from "./assets/bnei_rachel_logo.jpeg";
 
 function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -15,7 +16,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h1>Bnei Rachel</h1>
+       <div className="navbar-logo">
+        <Link to="/"><img src={logo} alt="Bnei Rachel Logo" /></Link>
+      </div>
       <ul className="nav-links">
 
         <li onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
