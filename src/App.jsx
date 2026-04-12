@@ -15,6 +15,10 @@ import Mission from './pages/about/Mission.jsx'
 import Location from './pages/about/Location.jsx'
 import Photos from './pages/about/Photos.jsx'
 
+import HostEvent from './pages/program/HostEvent.jsx'
+import Schedule from './pages/program/Schedule.jsx'
+import Calendar from './pages/program/Calendar.jsx'
+
 function App() {
   return (
     <div>
@@ -33,6 +37,11 @@ function App() {
         <Route path="/about/mission" element={<Mission />} />
         <Route path="/about/location" element={<Location />} />
         <Route path="/about/photos" element={<Photos />} />
+
+        <Route path="/program/host-event" element={<HostEvent />} />
+        <Route path="/program/schedule" element={<Schedule />} />
+        <Route path="/program/calendar" element={<Calendar />} />
+
       </Routes>
       
     </div>
