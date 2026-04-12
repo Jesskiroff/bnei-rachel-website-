@@ -1,6 +1,4 @@
 import './App.css'
-import Header from './Header.jsx'
-import Image from './Image.jsx'
 import Navbar from './Navbar.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
@@ -18,6 +16,10 @@ import Photos from './pages/about/Photos.jsx'
 import HostEvent from './pages/program/HostEvent.jsx'
 import Schedule from './pages/program/Schedule.jsx'
 import Calendar from './pages/program/Calendar.jsx'
+
+import Administration from './pages/faculty/Administration.jsx'
+import Staff from './pages/faculty/Staff.jsx'
+import GuestSpeakers from './pages/faculty/GuestSpeakers.jsx'
 
 function App() {
   return (
@@ -41,6 +43,10 @@ function App() {
         <Route path="/program/host-event" element={<HostEvent />} />
         <Route path="/program/schedule" element={<Schedule />} />
         <Route path="/program/calendar" element={<Calendar />} />
+
+        <Route path="/faculty/administration" element={<Administration />} />
+        <Route path="/faculty/staff" element={<Staff />} />
+        <Route path="/faculty/guest-speakers" element={<GuestSpeakers />} />
 
       </Routes>
       
