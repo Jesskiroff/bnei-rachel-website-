@@ -1,5 +1,11 @@
+import HeroSlider from '../HeroSlider';
+
 function Home() {
-    return <h1>Home Page</h1>;
-  }
-  
-  export default Home;
+  return (
+    <div>
+      <HeroSlider />
+    </div>
+  );
+}
+
+export default Home;
