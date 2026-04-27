@@ -107,7 +107,8 @@
   
   /* Donate page */
   .donate-btn {
-    background-color: #8b6340;
+    /* background-color: #8b6340; */
+    background-color:  rgb(21, 21, 136);
     color: white !important;
     padding: 8px 20px;
     border-radius: 4px;
@@ -117,7 +118,8 @@
   }
   
   .donate-btn:hover {
-    background-color: #6b8c42 !important;
+    /* background-color: #6b8c42 !important; */
+    background-color: rgb(16, 16, 87);
     color: white !important;
   }
  

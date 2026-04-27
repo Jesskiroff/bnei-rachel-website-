@@ -1,21 +1,21 @@
 const contacts = [
     {
         id:1,
-        name: "Rabbi ***",
+        name: "Erez Masud",
         imgURL: "https://via.placeholder.com/150",
         email: "john.doe@example.com",
         phone: "123-456-7890"
     },
     {
         id:2,
-        name: "John Doe",
+        name: "Tova",
         imgURL: "https://via.placeholder.com/150",
         email: "john.doe@example.com",
         phone: "123-456-7890"
     },
     {
         id:3,
-        name: "Joe shmoe",
+        name: "Jessica",
         imgURL: "https://via.placeholder.com/150",
         email: "joeshmoe@example.com",
         phone: "123-456-7890"
