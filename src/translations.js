@@ -55,13 +55,13 @@ const translations = {
       mission: "הצהרת משימה",
       location: "מיקום",
       photos: "תמונות",
-      hostEvent: "אירח את האירוע שלך ב-BRY",
+      hostEvent: "אירח את האירוע שלך בבני רחל",
       schedule: "לוח זמנים שבועי",
       calendar: "לוח שנה",
       administration: "הנהלה",
       staff: "צוות",
       guestSpeakers: "דוברים אורחים",
-      liveClasses: "שיעורים חיים",
+      liveClasses: "שיעורים 'Live'",
       recordedClasses: "שיעורים מוקלטים",
      
   

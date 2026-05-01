@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
-import logo from "./assets/bnei_rachel_logo.jpeg";
+import logo from "./assets/bnei_rachel_logo_nw.jpeg";
 import { useLanguage } from "./LanguageContext";
 import translations from "./translations";
 
