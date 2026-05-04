@@ -6,7 +6,7 @@ import './HeroSlider.css';
 
 // Import your images here
 import photo1 from './assets/farmPic.jpeg';
-import photo2 from './assets/hachnasatSeferTorah.jpeg';
+import photo2 from './assets/bry_w_wall.jpeg';
 import photo3 from './assets/kidsMatzahBaking.jpeg';
 import photo4 from './assets/rabbiMatzahBaking.jpeg';
 import photo5 from './assets/rabbiClass.jpeg';
