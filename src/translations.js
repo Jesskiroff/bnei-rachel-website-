@@ -19,7 +19,7 @@ const translations = {
       guestSpeakers: "Guest Speakers",
       liveClasses: "Live Classes",
       recordedClasses: "Recorded Classes",
-      
+      watchOurStory: "Watch Our Story",
   
       // Pages
       welcomeTitle: "Welcome to Bnei Rachel",
@@ -63,7 +63,7 @@ const translations = {
       guestSpeakers: "דוברים אורחים",
       liveClasses: "שיעורים 'Live'",
       recordedClasses: "שיעורים מוקלטים",
-     
+      watchOurStory: "צפו בסיפור שלנו",
   
       // Pages
       welcomeTitle: "ברוכים הבאים לבני רחל",

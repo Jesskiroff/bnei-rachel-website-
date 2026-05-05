@@ -1,0 +1,48 @@
+.home-page {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  
+  .watch-story-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(245, 240, 232, 0.85);
+  }
+  
+  .home-welcome {
+    font-size: 2.5rem;
+    color: #4a3728;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .home-subtitle {
+    font-size: 1.2rem;
+    color: #7a6a5a;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .watch-story-btn {
+    background-color: #8b6340;
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    font-size: 1.1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 99, 64, 0.3);
+  }
+  
+  .watch-story-btn:hover {
+    background-color: #6b8c42;
+    transform: scale(1.05);
+  }
