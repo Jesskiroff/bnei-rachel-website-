@@ -20,6 +20,7 @@ const translations = {
       liveClasses: "Live Classes",
       recordedClasses: "Recorded Classes",
       watchOurStory: "Watch Our Story",
+     
   
       // Pages
       welcomeTitle: "Welcome to Bnei Rachel",
@@ -41,6 +42,18 @@ const translations = {
       yourInfo: "Your Information",
       submitDonate: "Donate",
       thankYou: "Thank You!",
+      allPhotos: "All Photos",
+      events: "Events",
+      classes: "Classes",
+      aboutSection1Title: "Who We Are",
+      aboutSection1Text: "Your English text for section 1 here...",
+      aboutSection2Title: "Our Mission",
+      aboutSection2Text: "Your English text for section 2 here...",
+      aboutVideoTitle: "Watch Our Story",
+      aboutSection3Title: "Our Community",
+      aboutSection3Text: "Your English text for section 3 here...",
+      aboutSection4Title: "Our Classes",
+      aboutSection4Text: "Your English text for section 4 here...",
       
     },
     he: {
@@ -64,7 +77,7 @@ const translations = {
       liveClasses: "שיעורים 'Live'",
       recordedClasses: "שיעורים מוקלטים",
       watchOurStory: "צפו בסיפור שלנו",
-  
+    
       // Pages
       welcomeTitle: "ברוכים הבאים לבני רחל",
       welcomeSubtitle: "מקום של לימוד וקהילה",
@@ -85,6 +98,19 @@ const translations = {
       yourInfo: "הפרטים שלך",
       submitDonate: "תרום",
       thankYou: "תודה רבה!",
+      allPhotos: "כל התמונות",
+      events: "אירועים",
+      classes: "שיעורים",
+      aboutSection1Title: "מי אנחנו",
+      aboutSection1Text: "הטקסט שלך בעברית לסעיף 1...",
+      aboutSection2Title: "המשימה שלנו",
+      aboutSection2Text: "הטקסט שלך בעברית לסעיף 2...",
+      aboutVideoTitle: "צפו בסיפור שלנו",
+      aboutSection3Title: "הקהילה שלנו",
+      aboutSection3Text: "הטקסט שלך בעברית לסעיף 3...",
+      aboutSection4Title: "השיעורים שלנו",
+      aboutSection4Text: "הטקסט שלך בעברית לסעיף 4...",
+        
     },
   };
   
