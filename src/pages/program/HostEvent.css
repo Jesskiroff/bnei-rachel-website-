@@ -1,0 +1,140 @@
+.host-event-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .host-event-intro {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .host-event-intro h2 {
+    font-size: 2rem;
+    color: #4a3728;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  
+  .host-event-intro p {
+    font-size: 1.1rem;
+    color: #7a6a5a;
+    line-height: 1.8;
+  }
+  
+  .host-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-section h3 {
+    font-size: 1.1rem;
+    color: #4a3728;
+    border-bottom: 2px solid #ede6d6;
+    padding-bottom: 8px;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .form-input {
+    padding: 12px 16px;
+    border: 2px solid #ede6d6;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #4a3728;
+    outline: none;
+    width: 100%;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-input:focus {
+    border-color: #8b6340;
+  }
+  
+  /* Event type buttons */
+  .event-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  
+  .event-type-btn {
+    padding: 14px;
+    border: 2px solid #8b6340;
+    background: white;
+    color: #8b6340;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .event-type-btn.active,
+  .event-type-btn:hover {
+    background-color: #8b6340;
+    color: white;
+  }
+  
+  /* Textarea */
+  .form-textarea {
+    padding: 12px 16px;
+    border: 2px solid #ede6d6;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #4a3728;
+    outline: none;
+    width: 100%;
+    resize: vertical;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-textarea:focus {
+    border-color: #8b6340;
+  }
+  
+  /* Submit button */
+  .host-event-submit-btn {
+    padding: 16px;
+    background-color: #8b6340;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .host-event-submit-btn:hover {
+    background-color: #6b8c42;
+  }
+  
+  .host-event-submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form-error {
+    color: #c0392b;
+    text-align: center;
+    font-size: 0.95rem;
+  }

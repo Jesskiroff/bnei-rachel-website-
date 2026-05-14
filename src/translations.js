@@ -54,7 +54,20 @@ const translations = {
       aboutSection3Text: "Your English text for section 3 here...",
       aboutSection4Title: "Our Classes",
       aboutSection4Text: "Your English text for section 4 here...",
-      
+      missionTitle: "Mission Statement",
+      missionText: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.",
+      hostEventTitle: "Host Your Event at Bnei Rachel",
+      hostEventSubtitle: "We would love to be part of your special day. Fill out the form below and we will be in touch with you shortly.",
+      phoneNumber: "Phone Number",
+      eventType: "Type of Event",
+      otherEventType: "Please describe your event...",
+      additionalNotes: "Additional Notes & Special Requests",
+      notesPlaceholder: "Tell us anything else we should know about your event...",
+      submitRequest: "Submit Request",
+      thankYouTitle: "Thank You!",
+      thankYouMessage: "Your event request has been received. We will be in touch with you shortly to discuss the details.",
+      backToHome: "Back to Home",
+            
     },
     he: {
       // Navbar
@@ -77,6 +90,7 @@ const translations = {
       liveClasses: "שיעורים 'Live'",
       recordedClasses: "שיעורים מוקלטים",
       watchOurStory: "צפו בסיפור שלנו",
+      
     
       // Pages
       welcomeTitle: "ברוכים הבאים לבני רחל",
@@ -110,6 +124,19 @@ const translations = {
       aboutSection3Text: "הטקסט שלך בעברית לסעיף 3...",
       aboutSection4Title: "השיעורים שלנו",
       aboutSection4Text: "הטקסט שלך בעברית לסעיף 4...",
+      missionTitle: "המשימה של בני רחל",
+      missionText: "לורם איפסום דולור סיט אמט, קונסקטטור אדיפיסינג אלית. סיטום בולגריה בקלות, ובחנות עיין אינטרנט.",
+      hostEventTitle: "אירח את האירוע שלך בבני רחל",
+      hostEventSubtitle: "נשמח להיות חלק מהיום המיוחד שלך. מלא את הטופס למטה ונחזור אליך בהקדם.",
+      phoneNumber: "מספר טלפון",
+      eventType: "סוג האירוע",
+      otherEventType: "אנא תאר את האירוע שלך...",
+      additionalNotes: "הערות נוספות ובקשות מיוחדות",
+      notesPlaceholder: "ספר לנו כל מה שצריך לדעת על האירוע שלך...",
+      submitRequest: "שלח בקשה",
+      thankYouTitle: "תודה רבה!",
+      thankYouMessage: "בקשת האירוע שלך התקבלה. ניצור איתך קשר בהקדם לדון בפרטים.",
+      backToHome: "חזרה לדף הבית",
         
     },
   };

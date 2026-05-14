@@ -21,6 +21,8 @@ import Administration from './pages/faculty/Administration.jsx'
 import Staff from './pages/faculty/Staff.jsx'
 import GuestSpeakers from './pages/faculty/GuestSpeakers.jsx'
 
+import ThankYou from "./pages/ThankYou";
+
 function App() {
   return (
     <div>
@@ -47,6 +49,9 @@ function App() {
         <Route path="/faculty/administration" element={<Administration />} />
         <Route path="/faculty/staff" element={<Staff />} />
         <Route path="/faculty/guest-speakers" element={<GuestSpeakers />} />
+
+        <Route path="/thank-you" element={<ThankYou />} />
+        
 
       </Routes>
       
