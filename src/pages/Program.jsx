@@ -1,5 +1,5 @@
 function Program() {
-    return <h1>Our Programs</h1>;
-  }
-  
-  export default Program;
+  return <h1>Program</h1>;
+}
+
+export default Program;

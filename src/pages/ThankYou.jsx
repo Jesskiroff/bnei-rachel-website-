@@ -10,7 +10,7 @@ function ThankYou() {
   return (
     <div className="thankyou-page">
       <div className="thankyou-card">
-        <div className="thankyou-icon">🙏</div>
+        <div className="thankyou-icon">😄</div>
         <h1>{t.thankYouTitle}</h1>
         <p>{t.thankYouMessage}</p>
         <Link to="/" className="thankyou-home-btn">{t.backToHome}</Link>

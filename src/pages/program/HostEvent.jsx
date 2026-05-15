@@ -6,6 +6,7 @@ import PageBanner from "../../PageBanner";
 import bannerImg from "../../assets/hachnasatSeferTorah.jpeg";
 import { supabase } from "../../supabaseClient";
 import "./HostEvent.css";
+import emailjs from "@emailjs/browser";
 
 const EVENT_TYPES = [
   { value: "bar-mitzvah", label: "Bar Mitzvah" },
@@ -60,18 +61,34 @@ function HostEvent() {
     ]);
 
     if (dbError) {
+      console.log("Supabase error:", dbError);
       setLoading(false);
       setError(language === "en" ? "Something went wrong. Please try again." : "משהו השתבש. אנא נסה שוב.");
       return;
     }
 
-    // Send email notification via Gmail
-    // You will connect this to an email service like EmailJS or Supabase Edge Functions
-    // For now the data is saved to Supabase and you will be notified via the dashboard
+    // Send email via EmailJS
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          event_type: formData.eventType === "other" ? formData.otherEventType : formData.eventType,
+          notes: formData.notes || "No additional notes",
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+    } catch (emailError) {
+      console.error("Email failed to send:", emailError);
+    }
 
     setLoading(false);
     navigate("/thank-you");
   }
+    
 
   return (
     <div>

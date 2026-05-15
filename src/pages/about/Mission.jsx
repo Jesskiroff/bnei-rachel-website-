@@ -1,6 +1,6 @@
 import { useLanguage } from "../../LanguageContext";
 import translations from "../../translations";
-import backgroundImg from "../../assets/rabbiClass.jpeg";
+import backgroundImg from "../../assets/bry_w_wall.jpeg";
 import "./Mission.css";
 
 function Mission() {
