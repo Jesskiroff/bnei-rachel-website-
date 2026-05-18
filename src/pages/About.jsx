@@ -1,4 +1,3 @@
-import PageBanner from '../PageBanner';
 import { useLanguage } from '../LanguageContext';
 import translations from '../translations';
 import aboutImg from '../assets/rabbiClass.jpeg';
@@ -13,7 +12,20 @@ function About() {
 
   return (
     <div>
-      <PageBanner title={t.about} image={aboutImg} />
+
+      {/* Video at the top replacing the banner */}
+      <div className="about-video-top">
+        <div className="about-video-label">{t.watchOurStory}</div>
+        <div className="about-video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/797ahHsPWnA"
+            title="Bnei Rachel About Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
 
       <div className="about-container">
 
@@ -36,20 +48,6 @@ function About() {
           </div>
           <div className="about-image-wrap">
             <img src={img2} alt="Our Community" />
-          </div>
-        </div>
-
-        {/* Video in the Middle */}
-        <div className="about-video-section">
-          <h2>{t.aboutVideoTitle}</h2>
-          <div className="about-video-wrap">
-            <iframe
-              src="https://www.youtube.com/embed/797ahHsPWnA"
-              title="Bnei Rachel About Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
           </div>
         </div>
 
