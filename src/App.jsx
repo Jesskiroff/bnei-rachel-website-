@@ -23,6 +23,8 @@ import GuestSpeakers from './pages/faculty/GuestSpeakers.jsx'
 
 import ThankYou from "./pages/ThankYou";
 
+import ContactSuccess from "./pages/ContactSuccess";
+
 function App() {
   return (
     <div>
@@ -51,6 +53,8 @@ function App() {
         <Route path="/faculty/guest-speakers" element={<GuestSpeakers />} />
 
         <Route path="/thank-you" element={<ThankYou />} />
+
+        <Route path="/contact-success" element={<ContactSuccess />} />
         
 
       </Routes>

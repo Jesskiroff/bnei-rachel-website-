@@ -76,6 +76,9 @@ const translations = {
       contactSuccessTitle: "Message Sent!",
       contactSuccessMessage: "Thank you for reaching out. We will get back to you shortly.",
       sendAnotherMessage: "Send Another Message",
+      contactSuccessTitle: "Thank you for your message!",
+      contactSuccessMessage: "Thank you for reaching out, we will get back to you shortly!",
+      backToHome: "Back to Home",
             
     },
     he: {
@@ -154,7 +157,10 @@ const translations = {
       contactSuccessTitle: "ההודעה נשלחה!",
       contactSuccessMessage: "תודה שפנית אלינו. נחזור אליך בהקדם.",
       sendAnotherMessage: "שלח הודעה נוספת",
-        
+      contactSuccessTitle: "ההודעה נשלחה!",
+      contactSuccessMessage: "תודה שפנית אלינו. נחזור אליך בהקדם.",
+      backToHome: "חזרה לדף הבית",
+              
     },
   };
   

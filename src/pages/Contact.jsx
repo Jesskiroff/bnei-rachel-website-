@@ -6,10 +6,12 @@ import bannerImg from "../assets/farmPic.jpeg";
 import { supabase } from "../supabaseClient";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
   const { language } = useLanguage();
   const t = translations[language];
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -75,8 +77,7 @@ function Contact() {
     }
 
     setLoading(false);
-    setSuccess(true);
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    navigate("/contact-success");
   }
 
   return (
