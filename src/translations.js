@@ -51,7 +51,7 @@ const translations = {
       aboutSection2Text: "Your English text for section 2 here...",
       aboutVideoTitle: "Watch Our Story",
       aboutSection3Title: "Our Community",
-      aboutSection3Text: "In our community, we have 11 families living alongside the yeshiva and Kever Rachel. Children play in the streets of Bethlehem, bringing the place to life along with the voices of young students diligently learning Torah and prayer fill the air. We invite you to partner with us in this great endeavor, one that the greatest sages of our generation have longed with all their hearts to see fulfilled, to bring the sound of Torah learning right next to the tomb of Rachel, and to deepen the Jewish presence in Bethlehem, may it be rebuilt speedily in our days.",
+      aboutSection3Text: "In our community, we have 11 families living alongside the yeshiva and Kever Rachel. Children play in the streets of Beit Lechem, the voices of young students diligently learning Torah and prayer fill the air, and, together, they bring the place to life! We invite you to partner with us in this great endeavor, one that the greatest sages of our generation have longed for with all their hearts to see fulfilled: To bring the sound of Torah learning right next to Kever Rachel and to deepen the Jewish presence in Beit Lechem. May it be rebuilt speedily in our days.",
       aboutSection4Title: "Our Classes",
       aboutSection4Text: "Your English text for section 4 here...",
       missionTitle: "Mission Statement",
