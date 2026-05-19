@@ -20,6 +20,7 @@ const translations = {
       liveClasses: "Live Classes",
       recordedClasses: "Recorded Classes",
       watchOurStory: "Watch Our Story",
+
      
   
       // Pages
@@ -67,6 +68,14 @@ const translations = {
       thankYouTitle: "Thank You!",
       thankYouMessage: "Your event request has been received. We will be in touch with you shortly to discuss the details.",
       backToHome: "Back to Home",
+      contactTitle: "Get In Touch",
+      contactSubtitle: "We would love to hear from you. Fill out the form below and we will get back to you as soon as possible.",
+      subject: "Subject",
+      message: "Your Message",
+      sendMessage: "Send Message",
+      contactSuccessTitle: "Message Sent!",
+      contactSuccessMessage: "Thank you for reaching out. We will get back to you shortly.",
+      sendAnotherMessage: "Send Another Message",
             
     },
     he: {
@@ -137,6 +146,14 @@ const translations = {
       thankYouTitle: "תודה רבה!",
       thankYouMessage: "בקשת האירוע שלך התקבלה. ניצור איתך קשר בהקדם לדון בפרטים.",
       backToHome: "חזרה לדף הבית",
+      contactTitle: "צור קשר",
+      contactSubtitle: "נשמח לשמוע ממך. מלא את הטופס למטה ונחזור אליך בהקדם האפשרי.",
+      subject: "נושא",
+      message: "ההודעה שלך",
+      sendMessage: "שלח הודעה",
+      contactSuccessTitle: "ההודעה נשלחה!",
+      contactSuccessMessage: "תודה שפנית אלינו. נחזור אליך בהקדם.",
+      sendAnotherMessage: "שלח הודעה נוספת",
         
     },
   };
