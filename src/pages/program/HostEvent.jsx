@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../../LanguageContext";
 import translations from "../../translations";
 import PageBanner from "../../PageBanner";
-import bannerImg from "../../assets/hachnasatSeferTorah.jpeg";
+import bannerImg from "../../assets/logo_on_wall_from_far.jpeg";
 import { supabase } from "../../supabaseClient";
 import "./HostEvent.css";
 import emailjs from "@emailjs/browser";
