@@ -3,39 +3,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f0e8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 40px 20px;
     font-family: Helvetica, Arial, sans-serif;
   }
   
-  .contact-success-card {
-    background-color: white;
-    max-width: 600px;
-    width: 100%;
-    padding: 60px 40px;
-    border-radius: 12px;
+  .contact-success-content {
     text-align: center;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    border-top: 4px solid #8b6340;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   
   .contact-success-icon {
     font-size: 4rem;
-    margin-bottom: 24px;
   }
   
-  .contact-success-card h1 {
-    font-size: 2rem;
-    color: #4a3728;
-    margin-bottom: 16px;
-    font-weight: 500;
+  .contact-success-content h1 {
+    font-size: 2.5rem;
+    color: rgb(6, 6, 6);
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   }
   
-  .contact-success-card p {
-    font-size: 1.1rem;
-    color: #7a6a5a;
+  .contact-success-content p {
+    font-size: 1.2rem;
+    color: rgb(21, 20, 20);
     line-height: 1.8;
-    margin-bottom: 36px;
+    max-width: 500px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
   }
   
   .contact-success-home-btn {
@@ -49,6 +49,7 @@
     font-size: 1rem;
     font-family: Helvetica, Arial, sans-serif;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
   }
   
   .contact-success-home-btn:hover {
