@@ -2,7 +2,7 @@ import { useLanguage } from '../LanguageContext';
 import translations from '../translations';
 import aboutImg from '../assets/rabbiClass.jpeg';
 import img2 from '../assets/rabbiMatzahBaking.jpeg';
-import img3 from '../assets/hachnasatSeferTorah.jpeg';
+import img3 from '../assets/twoBoys.jpeg';
 import img4 from '../assets/kidsMatzahBaking.jpeg';
 import './About.css';
 
