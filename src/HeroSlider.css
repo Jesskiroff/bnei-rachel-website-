@@ -1,16 +1,16 @@
 .hero-slider {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    overflow: hidden;
-  }
-  
-  .slide-image {
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: top;
+}
   .hero-text {
     position: absolute;
     top: 50%;

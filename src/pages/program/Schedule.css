@@ -1,0 +1,111 @@
+.schedule-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .schedule-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .schedule-intro h2 {
+    font-size: 2rem;
+    color: #4a3728;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-intro p {
+    font-size: 1.1rem;
+    color: #7a6a5a;
+    margin-bottom: 24px;
+  }
+  
+  .schedule-download-btn {
+    display: inline-block;
+    background-color: #8b6340;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-download-btn:hover {
+    background-color: #6b8c42;
+  }
+  
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .faculty-card {
+    background-color: #f5e6d6;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .faculty-role {
+    font-size: 0.85rem;
+    color: #7a6a5a;
+    margin-bottom: 4px;
+  }
+  
+  .faculty-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4a3728;
+  }
+  
+  .table-scroll {
+    overflow-x: auto;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    min-width: 900px;
+  }
+  
+  .schedule-table th {
+    background-color: #8b6340;
+    color: white;
+    padding: 10px 8px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #ccc;
+  }
+  
+  .schedule-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.4;
+  }
+  
+  .time-cell {
+    font-weight: 600;
+    color: #4a3728;
+    white-space: nowrap;
+    background-color: #f5f0e8;
+  }
+  
+  .row-meal td { background-color: #fff8e1; font-weight: 600; }
+  .row-session td { background-color: #e8f5e9; font-weight: 600; }
+  .row-class td { background-color: #ffffff; }
+  .row-shabbat td { background-color: #ede7f6; font-weight: 600; }
+  
+  .full-cell { text-align: center; }
+  
+  .schedule-wrap.rtl .schedule-table { direction: rtl; }
+  .schedule-wrap.rtl .faculty-grid { direction: rtl; }

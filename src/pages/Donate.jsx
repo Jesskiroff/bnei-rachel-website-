@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PageBanner from "../PageBanner";
-import bannerImg from "../assets/farmPic.jpeg";
+// import PageBanner from "../PageBanner";
+// import bannerImg from "../assets/farmPic.jpeg";
 import { supabase } from "../supabaseClient";
 import { useLanguage } from "../LanguageContext";
 import translations from "../translations";
@@ -75,7 +75,7 @@ function Donate() {
 
   return (
     <div>
-      <PageBanner title={t.donate} image={bannerImg} />
+      {/* <PageBanner title={t.donate} image={bannerImg} /> */}
       <div className="donate-container">
         <h2>{t.donateTitle}</h2>
         <p className="donate-subtitle">{t.donateSubtitle}</p>

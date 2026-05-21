@@ -79,6 +79,8 @@ const translations = {
       contactSuccessTitle: "Thank you for your message!",
       contactSuccessMessage: "Thank you for reaching out, we will get back to you shortly!",
       backToHome: "Back to Home",
+      scheduleTitle: "Weekly Schedule — Yeshivat Bnei Rachel",
+      scheduleSubtitle: "Academic Year 5786 | Elul & Winter Term — Tractate Bava Kama",
             
     },
     he: {
@@ -160,6 +162,8 @@ const translations = {
       contactSuccessTitle: "ההודעה נשלחה!",
       contactSuccessMessage: "תודה שפנית אלינו. נחזור אליך בהקדם.",
       backToHome: "חזרה לדף הבית",
+      scheduleTitle: "מערכת שעות — ישיבת בני רחל",
+      scheduleSubtitle: "שנת תשפ\"ו | זמן אלול וזמן חורף — מסכת בבא קמא",
               
     },
   };
