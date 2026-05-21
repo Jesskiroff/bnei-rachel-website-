@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "../LanguageContext";
 import translations from "../translations";
 import PageBanner from "../PageBanner";
-import bannerImg from "../assets/farmPic.jpeg";
+import bannerImg from "../assets/bryWallLogo.jpeg";
 import { supabase } from "../supabaseClient";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
