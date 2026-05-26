@@ -15,7 +15,7 @@ import Photos from './pages/about/Photos.jsx'
 
 import HostEvent from './pages/program/HostEvent.jsx'
 import Schedule from './pages/program/Schedule.jsx'
-import Calendar from './pages/program/Calendar.jsx'
+// import Calendar from './pages/program/Calendar.jsx'
 
 import Administration from './pages/faculty/Administration.jsx'
 import Staff from './pages/faculty/Staff.jsx'
@@ -24,6 +24,8 @@ import GuestSpeakers from './pages/faculty/GuestSpeakers.jsx'
 import ThankYou from "./pages/ThankYou";
 
 import ContactSuccess from "./pages/ContactSuccess";
+
+import LiveClasses from "./pages/shiurs/LiveClasses.jsx";
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faculty" element={<Faculty />} />
-        <Route path="/program" element={<Program />} />
+        <Route path="/program" element={<Program />} /> 
         <Route path="/shiurs" element={<Shiurs />} />
         <Route path="/donate" element={<Donate />} />
 
@@ -46,7 +48,7 @@ function App() {
 
         <Route path="/program/host-event" element={<HostEvent />} />
         <Route path="/program/schedule" element={<Schedule />} />
-        <Route path="/program/calendar" element={<Calendar />} />
+        {/* <Route path="/program/calendar" element={<Calendar />} /> */}
 
         <Route path="/faculty/administration" element={<Administration />} />
         <Route path="/faculty/staff" element={<Staff />} />
@@ -55,6 +57,8 @@ function App() {
         <Route path="/thank-you" element={<ThankYou />} />
 
         <Route path="/contact-success" element={<ContactSuccess />} />
+
+        <Route path="/shiurs/live-classes" element={<LiveClasses />} />
         
 
       </Routes>

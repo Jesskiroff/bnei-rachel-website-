@@ -49,7 +49,7 @@ function Navbar() {
             <ul className="dropdown">
               <li><Link to="/program/host-event">{t.hostEvent}</Link></li>
               <li><Link to="/program/schedule">{t.schedule}</Link></li>
-              <li><Link to="/program/calendar">{t.calendar}</Link></li>
+              {/* <li><Link to="/program/calendar">{t.calendar}</Link></li> */}
             </ul>
           )}
         </li>

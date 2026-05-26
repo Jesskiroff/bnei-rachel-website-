@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useLanguage } from "../../LanguageContext";
 import translations from "../../translations";
-import PageBanner from "../../PageBanner";
-import bannerImg from "../../assets/farmPic.jpeg";
+// import PageBanner from "../../PageBanner";
+// import bannerImg from "../../assets/farmPic.jpeg";
 import "./Photos.css";
 
 // Import your photos here
@@ -37,7 +37,7 @@ function Photos() {
 
   return (
     <div>
-      <PageBanner title={t.photos} image={bannerImg} />
+      {/* <PageBanner title={t.photos} image={bannerImg} /> */}
       <div className="photos-container">
 
         {/* Category Filter Buttons */}
