@@ -6,7 +6,7 @@ const translations = {
       program: "Program",
       faculty: "Faculty",
       shiurs: "Shiurs",
-      contact: "Contact",
+      contact: "Contact Us",
       donate: "Donate",
       mission: "Mission Statement",
       location: "Location",
