@@ -27,6 +27,8 @@ import ContactSuccess from "./pages/ContactSuccess";
 
 import LiveClasses from "./pages/shiurs/LiveClasses.jsx";
 
+import RecordedClasses from "./pages/shiurs/RecordedClasses.jsx";
+
 function App() {
   return (
     <div>
@@ -60,6 +62,7 @@ function App() {
 
         <Route path="/shiurs/live-classes" element={<LiveClasses />} />
         
+        <Route path="/shiurs/recorded-classes" element={<RecordedClasses />} />
 
       </Routes>
       

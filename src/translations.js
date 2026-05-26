@@ -85,6 +85,7 @@ const translations = {
       liveClassesDescription: "We are working hard to bring you live Torah classes streamed directly from Bnei Rachel in Beit Lechem. Sign up below to be notified when we launch!",
       notifyMe: "Notify Me When Live",
       liveClassesSignupSuccess: "You're on the list! We'll notify you when live classes launch.",
+      recordedClassesSubtitle: "Watch recorded shiurim from Bnei Rachel's rabbis!.",
             
     },
     he: {
@@ -172,6 +173,7 @@ const translations = {
       liveClassesDescription: "אנו עובדים קשה כדי להביא לכם שיעורי תורה חיים המשודרים ישירות מבני רחל בבית לחם. הירשם למטה כדי לקבל הודעה כשנשיק!",
       notifyMe: "הודע לי כשיהיה זמין",
       liveClassesSignupSuccess: "אתה ברשימה! נודיע לך כשהשיעורים החיים יושקו.",
+      recordedClassesSubtitle: "צפו בשיעורי תורה מוקלטים מהרבנים שלנו בבני רחל.",
               
     },
   };

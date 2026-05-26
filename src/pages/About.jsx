@@ -14,7 +14,7 @@ function About() {
     <div>
 
       {/* Video at the top replacing the banner */}
-      <div className="about-video-top">
+      {/* <div className="about-video-top">
         <div className="about-video-label">{t.watchOurStory}</div>
         <div className="about-video-wrap">
           <iframe
@@ -25,7 +25,7 @@ function About() {
             allowFullScreen
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="about-container">
 
@@ -72,6 +72,19 @@ function About() {
             <img src={img4} alt="Our Classes" />
           </div>
         </div>
+
+        <div className="about-video-top">
+        <div className="about-video-label">{t.watchOurStory}</div>
+        <div className="about-video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/797ahHsPWnA"
+            title="Bnei Rachel About Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
 
       </div>
     </div>
