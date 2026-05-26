@@ -40,8 +40,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faculty" element={<Faculty />} />
-        <Route path="/program" element={<Program />} /> 
-        <Route path="/shiurs" element={<Shiurs />} />
+        <Route path="/program" element={<HostEvent />} /> 
+        <Route path="/shiurs" element={<RecordedClasses />} />
         <Route path="/donate" element={<Donate />} />
 
         <Route path="/about/mission" element={<Mission />} />

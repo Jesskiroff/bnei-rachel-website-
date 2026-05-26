@@ -11,16 +11,27 @@ import photo2 from "../../assets/rabbiClass.jpeg";
 import photo3 from "../../assets/rabbiMatzahBaking.jpeg";
 import photo4 from "../../assets/hachnasatSeferTorah.jpeg";
 import photo5 from "../../assets/kidsMatzahBaking.jpeg";
+import photo6 from "../../assets/bryWallLogo.jpeg";
+import photo7 from "../../assets/kids_group.jpeg";
+import photo8 from "../../assets/kids_israeli_flags.jpeg";
+import photo9 from "../../assets/rabbi_giving_class.jpeg";
+import photo10 from "../../assets/smily_girl_ble_shirt.jpeg";
+import photo11 from "../../assets/learning.jpeg";
 
 const albums = [
   {
     category: "events",
-    photos: [photo1, photo2, photo3],
+    photos: [photo7, photo8, photo3, photo5,  photo4,],
   },
   {
     category: "classes",
-    photos: [photo4, photo5],
+    photos: [photo2, photo9, photo11],
+
   },
+  {
+    category: "family life",
+    photos: [photo10]
+  }
 ];
 
 function Photos() {

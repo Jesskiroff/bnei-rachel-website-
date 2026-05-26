@@ -20,6 +20,7 @@ const translations = {
       liveClasses: "Live Classes",
       recordedClasses: "Recorded Classes",
       watchOurStory: "Watch Our Story",
+      hostEvent: "Host Your Event at BRY",
 
      
   
