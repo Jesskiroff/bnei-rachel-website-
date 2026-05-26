@@ -1,9 +1,9 @@
 import { useLanguage } from '../LanguageContext';
 import translations from '../translations';
-import aboutImg from '../assets/studentsLearning.jpeg';
-import img2 from '../assets/rabbiMatzahBaking.jpeg';
+import aboutImg from '../assets/rabbiClass.jpeg';
+import img2 from '../assets/logo_on_wall_from_far.jpeg';
 import img3 from '../assets/twoBoys.jpeg';
-import img4 from '../assets/kidsMatzahBaking.jpeg';
+import img4 from '../assets/learning.jpeg';
 import './About.css';
 
 function About() {
@@ -12,20 +12,7 @@ function About() {
 
   return (
     <div>
-
-      {/* Video at the top replacing the banner */}
-      {/* <div className="about-video-top">
-        <div className="about-video-label">{t.watchOurStory}</div>
-        <div className="about-video-wrap">
-          <iframe
-            src="https://www.youtube.com/embed/797ahHsPWnA"
-            title="Bnei Rachel About Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-      </div> */}
+          <h1>About Us</h1>
 
       <div className="about-container">
 

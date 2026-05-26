@@ -5,14 +5,19 @@ import 'swiper/css/effect-fade';
 import './HeroSlider.css';
 
 // Import your images here
-import photo1 from './assets/farmPic.jpeg';
+// import photo1 from './assets/farmPic.jpeg';
 import photo2 from './assets/bry_w_wall.jpeg';
 import photo3 from './assets/kidsMatzahBaking.jpeg';
 import photo4 from './assets/rabbiMatzahBaking.jpeg';
 import photo5 from './assets/rabbiClass.jpeg';
+import photo6 from './assets/kids_israeli_flags.jpeg';
+import photo7 from './assets/twoBoys.jpeg';
+import photo8 from './assets/visitorPic.jpeg';
 
 
-const images = [photo1, photo2, photo3, photo4, photo5];
+
+
+const images = [photo2, photo3, photo4, photo5, photo6, photo7, photo8];
 
 function HeroSlider() {
   return (
@@ -20,7 +25,7 @@ function HeroSlider() {
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         loop={true}
         speed={1000}
       >
