@@ -26,3 +26,7 @@ dist-ssr
 contacts.js
 
 .env
+
+public/zelle-qr.png
+
+src/pages/Donate.jsx

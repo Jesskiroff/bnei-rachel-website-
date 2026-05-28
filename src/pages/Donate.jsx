@@ -8,10 +8,13 @@ import "./Donate.css";
 
 const PRESET_AMOUNTS = [18, 36, 54, 100, 180, 360];
 
+
+
 function Donate() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const [paymentMethod, setPaymentMethod] = useState("zelle");
   const [selectedAmount, setSelectedAmount] = useState(null);
   const [customAmount, setCustomAmount] = useState("");
   const [frequency, setFrequency] = useState("one-time");
@@ -84,6 +87,58 @@ function Donate() {
 
           {/* Frequency */}
           <div className="form-section">
+            {/* Payment Method Selection */}
+<div className="form-section">
+  <h3>{t.paymentMethod}</h3>
+  <div className="payment-method-toggle">
+    <button
+      type="button"
+      className={paymentMethod === "zelle" ? "payment-btn active" : "payment-btn"}
+      onClick={() => setPaymentMethod("zelle")}
+    >
+      💜 Zelle
+    </button>
+    <button
+      type="button"
+      className={paymentMethod === "stripe" ? "payment-btn active" : "payment-btn"}
+      onClick={() => setPaymentMethod("stripe")}
+    >
+      💳 {t.creditCard}
+    </button>
+  </div>
+</div>
+
+{/* Zelle Section */}
+{paymentMethod === "zelle" && (
+  <div className="zelle-section">
+    <div className="zelle-info">
+      <div className="zelle-qr">
+        <img src="/zelle-qr.png" alt="Zelle QR Code" />
+      </div>
+      <div className="zelle-details">
+        <h3>{t.zelleTitle}</h3>
+        <p>{t.zelleInstructions}</p>
+        <div className="zelle-contact">
+          <p>{t.zellePhone} <strong></strong></p>
+          <p>{t.zelleEmail} <strong>rawez2@gmail.com</strong></p>
+          <p>{t.zelleName} <strong>AMERICAN FREINDS OF YESHIVAT BNEI RACHEL</strong></p>
+        </div>
+        <div className="zelle-steps">
+          <p>1. {t.zelleStep1}</p>
+          <p>2. {t.zelleStep2}</p>
+          <p>3. {t.zelleStep3}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+{/* Stripe Section — only show form when Stripe is selected */}
+{paymentMethod === "stripe" && (
+  <>
+    {/* rest of your existing form sections go here */}
+  </>
+)}
             <h3>{t.donationFrequency}</h3>
             <div className="frequency-toggle">
               <button

@@ -47,6 +47,7 @@ const translations = {
       allPhotos: "All Photos",
       events: "Events",
       classes: "Classes",
+
       aboutSection1Title: "Who We Are",
       aboutSection1Text: "Your English text for section 1 here...",
       aboutSection2Title: "Our Mission",
@@ -87,6 +88,16 @@ const translations = {
       notifyMe: "Notify Me When Live",
       liveClassesSignupSuccess: "You're on the list! We'll notify you when live classes launch.",
       recordedClassesSubtitle: "Watch recorded shiurim from Bnei Rachel's rabbis!.",
+      paymentMethod: "Choose Payment Method",
+      creditCard: "Credit Card",
+      zelleTitle: "Send via Zelle",
+      zelleInstructions: "Scan the QR code or send directly to the information below:",
+      zellePhone: "📱 Phone:",
+      zelleEmail: "📧 Email:",
+      zelleName: "👤 Name:",
+      zelleStep1: "Open your banking app or the Zelle app",
+      zelleStep2: "Search for our phone number or email",
+      zelleStep3: "Enter your donation amount and send",
             
     },
     he: {
@@ -175,6 +186,16 @@ const translations = {
       notifyMe: "הודע לי כשיהיה זמין",
       liveClassesSignupSuccess: "אתה ברשימה! נודיע לך כשהשיעורים החיים יושקו.",
       recordedClassesSubtitle: "צפו בשיעורי תורה מוקלטים מהרבנים שלנו בבני רחל.",
+      paymentMethod: "בחר אמצעי תשלום",
+      creditCard: "כרטיס אשראי",
+      zelleTitle: "שלח דרך Zelle",
+      zelleInstructions: "סרוק את קוד ה-QR או שלח ישירות למידע שלמטה:",
+      zellePhone: "📱 טלפון:",
+      zelleEmail: "📧 אימייל:",
+      zelleName: "👤 שם:",
+      zelleStep1: "פתח את אפליקציית הבנק שלך או את אפליקציית Zelle",
+      zelleStep2: "חפש את מספר הטלפון או האימייל שלנו",
+      zelleStep3: "הכנס את סכום התרומה ושלח",
               
     },
   };
