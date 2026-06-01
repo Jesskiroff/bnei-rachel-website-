@@ -37,7 +37,7 @@ function Navbar() {
           {openDropdown === "about" && (
             <ul className="dropdown">
               <li><Link to="/about/mission">{t.mission}</Link></li>
-              <li><Link to="/about/location">{t.location}</Link></li>
+              {/* <li><Link to="/about/location">{t.location}</Link></li> */}
               <li><Link to="/about/photos">{t.photos}</Link></li>
             </ul>
           )}
@@ -54,7 +54,7 @@ function Navbar() {
           )}
         </li>
 
-        <li onMouseEnter={() => handleMouseEnter("faculty")} onMouseLeave={handleMouseLeave}>
+        {/* <li onMouseEnter={() => handleMouseEnter("faculty")} onMouseLeave={handleMouseLeave}>
           <Link to="/faculty">{t.faculty}</Link>
           {openDropdown === "faculty" && (
             <ul className="dropdown">
@@ -63,7 +63,7 @@ function Navbar() {
               <li><Link to="/faculty/guest-speakers">{t.guestSpeakers}</Link></li>
             </ul>
           )}
-        </li>
+        </li> */}
 
         <li onMouseEnter={() => handleMouseEnter("shiurs")} onMouseLeave={handleMouseLeave}>
           <Link to="/shiurs">{t.shiurs}</Link>

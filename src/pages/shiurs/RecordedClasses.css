@@ -1,6 +1,6 @@
 .recorded-classes-page {
     min-height: 100vh;
-    background-color: #f5f0e8;
+    background-color: #d4e0d0;
     font-family: Helvetica, Arial, sans-serif;
   }
   
@@ -164,7 +164,7 @@
     position: absolute;
     top: 12px;
     right: 12px;
-    background: #f5f0e8;
+    background: #d4e0d0;
     border: none;
     border-radius: 50%;
     width: 34px;

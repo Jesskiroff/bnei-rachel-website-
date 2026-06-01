@@ -2,7 +2,7 @@ const translations = {
     en: {
       // Navbar
       home: "Home",
-      about: "About",
+      about: "About Us",
       program: "Program",
       faculty: "Faculty",
       shiurs: "Shiurs",
@@ -49,14 +49,14 @@ const translations = {
       classes: "Classes",
 
       aboutSection1Title: "Who We Are",
-      aboutSection1Text: "Your English text for section 1 here...",
+      aboutSection1Text: "The first and only Jewish settlement in Beit Lechem, since the days of the Bar Kokhba revolt. Yeshivat Bnei Rachel and the Jewish settlement in Beit Lechem inhabit this place on Shabbatot, holidays, and during hte nighttime, when Kever Rachel is closed to the public.",
       aboutSection2Title: "Our Mission",
-      aboutSection2Text: "Your English text for section 2 here...",
+      aboutSection2Text: "Bnei Rachel's mission is to fulfill the dream of the Gedolei Olam throughout all generations, witha special emphasis on Rav Kook's vision: To establish a Yeshiva and a Jewish settlement in Beit Lechem. Bnei Rachel gives Yeshiva Students the opportunity to learn in the place where Rachel Imenu was buried, where the Sanhedrin sat, where Shaul set out to kill Goliath, where the threshing floor of Boaz was,and where Ruth and Boaz got married and brought David Hamelech into the world, from whom Mashiach Tzidkeinu will come forth. The Yeshiva is expanding exponentially, with many students to joining every year. Such exponential expansion, curates the need to develop and widen the premises, to ensure that each and every person that wants to partake in this mssion of settling into Beit Lechem has the opportunity to participate in this mission. ",
       aboutVideoTitle: "Watch Our Story",
       aboutSection3Title: "Our Community",
       aboutSection3Text: "In our community, we have 11 families living alongside the yeshiva and Kever Rachel. Children play in the streets of Beit Lechem, the voices of young students diligently learning Torah and prayer fill the air, and, together, they bring the place to life! We invite you to partner with us in this great endeavor, one that the greatest sages of our generation have longed for with all their hearts to see fulfilled: To bring the sound of Torah learning right next to Kever Rachel and to deepen the Jewish presence in Beit Lechem. May it be rebuilt speedily in our days.",
       aboutSection4Title: "Our Classes",
-      aboutSection4Text: "Your English text for section 4 here...",
+      aboutSection4Text: "The Yeshiva has about 45 Bachurim, before and after their army service, yearly. Additionally, the yeshiva caters to 25 avreichim, Roshei Yeshiva, and staff members.",
       missionTitle: "Mission Statement",
       missionText: 'Together with all the Jewish people, we give thanks in prayer — "And the children shall return to their borders" — the Jewish people have returned to their Torah and their heritage. We pray for victory over all our enemies and those who seek to harm us, and we give thanks to God for our brothers and sisters who have returned home to the embrace of their families, through tremendous divine assistance.After two thousand years of exile, we have merited to renew the Jewish settlement in Bethlehem, adjacent to the tomb of our matriarch Rachel. For over 15 years we have had the privilege of settling and learning near the tomb of Rachel our matriarch, as emissaries of the entire Jewish people.',
       hostEventTitle: "Host Your Event at Bnei Rachel",

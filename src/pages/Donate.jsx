@@ -4,6 +4,7 @@ import { useState } from "react";
 import { supabase } from "../supabaseClient";
 import { useLanguage } from "../LanguageContext";
 import translations from "../translations";
+
 import "./Donate.css";
 
 const PRESET_AMOUNTS = [18, 36, 54, 100, 180, 360];
@@ -96,14 +97,14 @@ function Donate() {
       className={paymentMethod === "zelle" ? "payment-btn active" : "payment-btn"}
       onClick={() => setPaymentMethod("zelle")}
     >
-      💜 Zelle
+      Zelle
     </button>
     <button
       type="button"
       className={paymentMethod === "stripe" ? "payment-btn active" : "payment-btn"}
       onClick={() => setPaymentMethod("stripe")}
     >
-      💳 {t.creditCard}
+      {t.creditCard}
     </button>
   </div>
 </div>

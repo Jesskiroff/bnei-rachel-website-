@@ -16,8 +16,10 @@ function Home() {
       className="home-page"
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
-      <HeroSlider />
 
+      <div className="hero-wrapper">
+        <HeroSlider />
+      </div>
       {/* Watch Our Story Button */}
       <div className="watch-story-section">
         <h2 className="home-welcome">{t.welcomeTitle}</h2>

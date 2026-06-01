@@ -12,7 +12,7 @@ function About() {
 
   return (
     <div>
-          <h1>About Us</h1>
+          <h1 className="about-main-title">{t.about}</h1>
 
       <div className="about-container">
 
