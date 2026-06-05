@@ -231,13 +231,13 @@
   color: white;
 }
 
-.payment-btn:hover {
+/* .payment-btn:hover {
   background-color: #8b6340;
   color: white;
-}
+} */
 
 /* Zelle section */
-.zelle-section {
+/* .zelle-section {
   background-color: #f9f4ee;
   border-radius: 12px;
   padding: 30px;
@@ -302,4 +302,4 @@
   font-size: 0.95rem;
   color: #7a6a5a;
   margin-bottom: 6px;
-}
+} */
