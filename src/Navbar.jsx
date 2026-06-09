@@ -7,6 +7,7 @@ import translations from "./translations";
 
 function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language, toggleLanguage } = useLanguage();
   const t = translations[language];
 
@@ -18,26 +19,40 @@ function Navbar() {
     setOpenDropdown(null);
   }
 
+  function closeMobileMenu() {
+    setMobileMenuOpen(false);
+    setOpenDropdown(null);
+  }
+
   return (
     <nav className="navbar">
 
       {/* Left side — Logo + Home */}
       <div className="navbar-left">
         <div className="navbar-logo">
-          <Link to="/"><img src={logo} alt="Bnei Rachel Logo" /></Link>
+          <Link to="/" onClick={closeMobileMenu}>
+            <img src={logo} alt="Bnei Rachel Logo" />
+          </Link>
         </div>
-        <Link to="/" className="nav-home-link">{t.home}</Link>
+        <Link to="/" className="nav-home-link" onClick={closeMobileMenu}>{t.home}</Link>
       </div>
 
-      {/* Right side — all other links evenly spread */}
-      <ul className="nav-links">
+      {/* Hamburger button — only visible on mobile */}
+      <button
+        className="hamburger-btn"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      >
+        {mobileMenuOpen ? "✕" : "☰"}
+      </button>
+
+      {/* Desktop links */}
+      <ul className="nav-links desktop-nav">
 
         <li onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
           <Link to="/about">{t.about}</Link>
           {openDropdown === "about" && (
             <ul className="dropdown">
               <li><Link to="/about/mission">{t.mission}</Link></li>
-              {/* <li><Link to="/about/location">{t.location}</Link></li> */}
               <li><Link to="/about/photos">{t.photos}</Link></li>
             </ul>
           )}
@@ -49,21 +64,9 @@ function Navbar() {
             <ul className="dropdown">
               <li><Link to="/program/host-event">{t.hostEvent}</Link></li>
               <li><Link to="/program/schedule">{t.schedule}</Link></li>
-              {/* <li><Link to="/program/calendar">{t.calendar}</Link></li> */}
             </ul>
           )}
         </li>
-
-        {/* <li onMouseEnter={() => handleMouseEnter("faculty")} onMouseLeave={handleMouseLeave}>
-          <Link to="/faculty">{t.faculty}</Link>
-          {openDropdown === "faculty" && (
-            <ul className="dropdown">
-              <li><Link to="/faculty/administration">{t.administration}</Link></li>
-              <li><Link to="/faculty/staff">{t.staff}</Link></li>
-              <li><Link to="/faculty/guest-speakers">{t.guestSpeakers}</Link></li>
-            </ul>
-          )}
-        </li> */}
 
         <li onMouseEnter={() => handleMouseEnter("shiurs")} onMouseLeave={handleMouseLeave}>
           <Link to="/shiurs">{t.shiurs}</Link>
@@ -76,9 +79,7 @@ function Navbar() {
         </li>
 
         <li><Link to="/contact">{t.contact}</Link></li>
-
         <li><Link to="/donate" className="donate-btn">{t.donate}</Link></li>
-
         <li>
           <button className="language-btn" onClick={toggleLanguage}>
             {language === "en" ? "🇮🇱 עברית" : "🇺🇸 English"}
@@ -86,6 +87,39 @@ function Navbar() {
         </li>
 
       </ul>
+
+      {/* Mobile menu — only visible when hamburger is open */}
+      {mobileMenuOpen && (
+        <div className="mobile-menu">
+
+          <Link to="/about" onClick={closeMobileMenu}>{t.about}</Link>
+          <div className="mobile-submenu">
+            <Link to="/about/mission" onClick={closeMobileMenu}>{t.mission}</Link>
+            <Link to="/about/photos" onClick={closeMobileMenu}>{t.photos}</Link>
+          </div>
+
+          <Link to="/program" onClick={closeMobileMenu}>{t.program}</Link>
+          <div className="mobile-submenu">
+            <Link to="/program/host-event" onClick={closeMobileMenu}>{t.hostEvent}</Link>
+            <Link to="/program/schedule" onClick={closeMobileMenu}>{t.schedule}</Link>
+          </div>
+
+          <Link to="/shiurs" onClick={closeMobileMenu}>{t.shiurs}</Link>
+          <div className="mobile-submenu">
+            <Link to="/shiurs/live-classes" onClick={closeMobileMenu}>{t.liveClasses}</Link>
+            <Link to="/shiurs/recorded-classes" onClick={closeMobileMenu}>{t.recordedClasses}</Link>
+          </div>
+
+          <Link to="/contact" onClick={closeMobileMenu}>{t.contact}</Link>
+          <Link to="/donate" className="mobile-donate-btn" onClick={closeMobileMenu}>{t.donate}</Link>
+
+          <button className="language-btn mobile-lang-btn" onClick={() => { toggleLanguage(); closeMobileMenu(); }}>
+            {language === "en" ? "🇮🇱 עברית" : "🇺🇸 English"}
+          </button>
+
+        </div>
+      )}
+
     </nav>
   );
 }
