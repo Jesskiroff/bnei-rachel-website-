@@ -27,17 +27,14 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      {/* Left side — Logo + Home */}
-      <div className="navbar-left">
-        <div className="navbar-logo">
-          <Link to="/" onClick={closeMobileMenu}>
-            <img src={logo} alt="Bnei Rachel Logo" />
-          </Link>
-        </div>
-        <Link to="/" className="nav-home-link" onClick={closeMobileMenu}>{t.home}</Link>
+      {/* Logo on the far left */}
+      <div className="navbar-logo">
+        <Link to="/" onClick={closeMobileMenu}>
+          <img src={logo} alt="Bnei Rachel Logo" />
+        </Link>
       </div>
 
-      {/* Hamburger button — only visible on mobile */}
+      {/* Hamburger button — mobile only */}
       <button
         className="hamburger-btn"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -45,8 +42,10 @@ function Navbar() {
         {mobileMenuOpen ? "✕" : "☰"}
       </button>
 
-      {/* Desktop links */}
+      {/* Center links */}
       <ul className="nav-links desktop-nav">
+
+        <li><Link to="/">{t.home}</Link></li>
 
         <li onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
           <Link to="/about">{t.about}</Link>
@@ -79,18 +78,22 @@ function Navbar() {
         </li>
 
         <li><Link to="/contact">{t.contact}</Link></li>
-        <li><Link to="/donate" className="donate-btn">{t.donate}</Link></li>
-        <li>
-          <button className="language-btn" onClick={toggleLanguage}>
-            {language === "en" ? "🇮🇱 עברית" : "🇺🇸 English"}
-          </button>
-        </li>
 
       </ul>
 
-      {/* Mobile menu — only visible when hamburger is open */}
+      {/* Right side — Donate and Language */}
+      <div className="navbar-right desktop-nav">
+        <Link to="/donate" className="donate-btn">{t.donate}</Link>
+        <button className="language-btn" onClick={toggleLanguage}>
+          {language === "en" ? "🇮🇱 עברית" : "🇺🇸 English"}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="mobile-menu">
+
+          <Link to="/" onClick={closeMobileMenu}>{t.home}</Link>
 
           <Link to="/about" onClick={closeMobileMenu}>{t.about}</Link>
           <div className="mobile-submenu">
