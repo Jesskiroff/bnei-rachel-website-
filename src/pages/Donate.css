@@ -1,305 +1,58 @@
 .donate-container {
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 0 20px;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  .donate-container h2 {
-    font-size: 2rem;
-    color: #4a3728;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .donate-subtitle {
-    text-align: center;
-    color: #7a6a5a;
-    margin-bottom: 40px;
-    font-size: 1.1rem;
-  }
-  
-  .donate-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .form-section {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .form-section h3 {
-    color: #4a3728;
-    font-size: 1.1rem;
-    border-bottom: 2px solid #ede6d6;
-    padding-bottom: 8px;
-  }
-  
-  /* Frequency & Dedication Toggles */
-  .frequency-toggle,
-  .dedication-toggle {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .frequency-toggle button,
-  .dedication-toggle button {
-    padding: 10px 20px;
-    border: 2px solid #8b6340;
-    background: white;
-    color: #8b6340;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.95rem;
-    font-family: Helvetica, Arial, sans-serif;
-    transition: all 0.3s ease;
-  }
-  
-  .frequency-toggle button.active,
-  .dedication-toggle button.active {
-    background-color: #8b6340;
-    color: white;
-  }
-  
-  /* Amount Grid */
-  .amount-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-  }
-  
-  .amount-btn {
-    padding: 15px;
-    border: 2px solid #8b6340;
-    background: white;
-    color: #8b6340;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: Helvetica, Arial, sans-serif;
-    transition: all 0.3s ease;
-  }
-  
-  .amount-btn.active {
-    background-color: #8b6340;
-    color: white;
-  }
-  
-  .amount-btn:hover {
-    background-color: #8b6340;
-    color: white;
-  }
-  
-  /* Custom Amount */
-  .custom-amount {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .custom-amount label {
-    color: #7a6a5a;
-    font-size: 0.95rem;
-  }
-  
-  .custom-amount-input {
-    display: flex;
-    align-items: center;
-    border: 2px solid #8b6340;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 200px;
-  }
-  
-  .custom-amount-input span {
-    padding: 10px 12px;
-    background-color: #ede6d6;
-    color: #4a3728;
-    font-weight: 600;
-  }
-  
-  .custom-amount-input input {
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 1rem;
-    width: 100%;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  /* Dedication name input */
-  .dedication-name-input {
-    padding: 12px;
-    border: 2px solid #8b6340;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: Helvetica, Arial, sans-serif;
-    outline: none;
-    width: 100%;
-  }
-  
-  /* Donor inputs */
-  .donor-input {
-    padding: 12px;
-    border: 2px solid #ede6d6;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: Helvetica, Arial, sans-serif;
-    outline: none;
-    width: 100%;
-    transition: border 0.3s ease;
-  }
-  
-  .donor-input:focus {
-    border-color: #8b6340;
-  }
-  
-  /* Submit button */
-  .donate-submit-btn {
-    padding: 16px;
-    background-color: #8b6340;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-family: Helvetica, Arial, sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .donate-submit-btn:hover {
-    background-color: #6b8c42;
-  }
-  
-  .donate-submit-btn:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  /* Error */
-  .donate-error {
-    color: #c0392b;
-    text-align: center;
-    font-size: 0.95rem;
-  }
-  
-  /* Success */
-  .donate-success {
-    text-align: center;
-    padding: 80px 20px;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  .donate-success h2 {
-    font-size: 2.5rem;
-    color: #4a3728;
-    margin-bottom: 20px;
-  }
-  
-  .donate-success p {
-    font-size: 1.1rem;
-    color: #7a6a5a;
-  }
-
-  /* Payment method toggle */
-.payment-method-toggle {
+  min-height: 80vh;
   display: flex;
-  gap: 16px;
-}
-
-.payment-btn {
-  flex: 1;
-  padding: 16px;
-  border: 2px solid #8b6340;
-  background: white;
-  color: #8b6340;
-  border-radius: 8px;
-  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  padding: 40px 20px;
 }
 
-.payment-btn.active {
-  background-color: #8b6340;
-  color: white;
-}
-
-/* .payment-btn:hover {
-  background-color: #8b6340;
-  color: white;
-} */
-
-/* Zelle section */
-/* .zelle-section {
-  background-color: #f9f4ee;
+.donate-hero {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 60px 40px;
   border-radius: 12px;
-  padding: 30px;
-  border: 2px solid #ede6d6;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #8b6340;
 }
 
-.zelle-info {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.zelle-qr {
-  flex-shrink: 0;
-}
-
-.zelle-qr img {
-  width: 160px;
-  height: 160px;
-  border-radius: 8px;
-  border: 2px solid #ede6d6;
-}
-
-.zelle-details h3 {
-  font-size: 1.3rem;
+.donate-hero h2 {
+  font-size: 2rem;
   color: #4a3728;
-  margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
-.zelle-details p {
-  font-size: 1rem;
+.donate-subtitle {
+  font-size: 1.1rem;
   color: #7a6a5a;
   line-height: 1.8;
-  margin-bottom: 6px;
+  margin-bottom: 36px;
 }
 
-.zelle-contact {
-  background-color: white;
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 16px 0;
-  border: 1px solid #ede6d6;
+.stripe-donate-btn {
+  display: inline-block;
+  background-color: rgb(185, 10, 10);
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.zelle-contact p {
-  font-size: 1rem;
-  color: #4a3728;
-  margin-bottom: 6px;
+.stripe-donate-btn:hover {
+  background-color: #7e5a3b;
+  color: white;
 }
 
-.zelle-contact strong {
-  color: #8b6340;
-  font-size: 1.05rem;
-}
-
-.zelle-steps {
+.donate-secure-note {
+  font-size: 0.9rem;
+  color: #7a6a5a;
   margin-top: 16px;
 }
-
-.zelle-steps p {
-  font-size: 0.95rem;
-  color: #7a6a5a;
-  margin-bottom: 6px;
-} */

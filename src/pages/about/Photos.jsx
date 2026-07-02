@@ -17,11 +17,12 @@ import photo8 from "../../assets/kids_israeli_flags.jpeg";
 import photo9 from "../../assets/rabbi_giving_class.jpeg";
 import photo10 from "../../assets/smily_girl_ble_shirt.jpeg";
 import photo11 from "../../assets/learning.jpeg";
+import photo12 from "../../assets/erez_and_person.jpeg";
 
 const albums = [
   {
     category: "events",
-    photos: [photo7, photo8, photo3, photo5,  photo4,],
+    photos: [photo7, photo8, photo3, photo5,  photo4, photo12],
   },
   {
     category: "classes",
